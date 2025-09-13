@@ -10,3 +10,15 @@ client.once(Events.ClientReady, readyClient => {
 });
 
 client.login(config.token);
+
+client.on('messageCreate', async message => {
+    if (message.author.bot) return;
+    console.log(`New message in #${message.channel.name}: ${message.content}`);
+    if (message.content) {
+        message.channel.send(message.content);
+    }
+    // Reply instead of generic msg
+    // if (message.content) {
+    //     message.reply(message.content);
+    // }
+});
