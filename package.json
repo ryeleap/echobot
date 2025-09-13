@@ -6,7 +6,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "echo.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
